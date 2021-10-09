@@ -1,8 +1,8 @@
 import photo from '../1.jpg'
 export default function About (){
     return(      
-        <div className='row'>
-            <div className="col-4">
+        <div className='row '>
+            <div className="col-sm-6 col-lg-4 p-5">
                 <div className="container-md">
                 <div class="text-center">
                     <img class="rounded-circle z-depth-2 " src = {photo} alt='not availbe'/>
@@ -22,8 +22,8 @@ export default function About (){
                  </div>
                   
             </div>
-            <div className="col-8">
-                <span>  Hi, I am Mohammed Ihsaanul Haque.Looking to work as a Structural engineer
+            <div className="col-sm-6 col-lg-8 p-5">
+                <span className="p-5">  Hi, I am Mohammed Ihsaanul Haque.Looking to work as a Structural engineer
              in a construction company , a job that gives me opportunities to learn, innovate and enhance my
               skills and let me work on the leading areas of technology, alsowhich provides satisfaction and help
                me achieve personal as well as organizational goals.

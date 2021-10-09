@@ -1,6 +1,8 @@
 export default function Navbar(){
      return(
-        <nav className="navbar  navbar-dark bg-dark"> 
+      <div class="position-relative p-2">
+
+        <nav className="navbar fixed-top  navbar-dark bg-dark p-1"> 
           <div className='container-fluid'>
                 <a className="navbar-brand " href="#">
                     <div className="text-center">MOHAMMED</div>
@@ -16,5 +18,6 @@ export default function Navbar(){
             </div>           
               </div>      
       </nav>
+      </div>
      )
 }

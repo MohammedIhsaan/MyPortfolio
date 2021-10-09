@@ -4,51 +4,74 @@ import JSPhoto from "../js.png"
 import RPhoto from "../reactjs.png"
 import RDPhoto from "../redux.png"
 import BPhoto from "../bootstrap.png"
+import backgroundImage from '../images/1.jpg'
+
+let style = {fontSize:"70px"}
 export default function Skills (){
     return(
-        <div style={{backgroundColor:""}} className="container">
-            <h2 className='text-center' >Skills</h2>
-  <div className="row text-center">
-    <div className="col">
+        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat',maxWidth:"100%",height:"100vh" ,backgroundSize:"cover"
+        }} className="container-fluid text-center bg">        
+            
+
+            <div className="container-fluid">
+  <div className="row g-5">
+    <div className="col-md-8">
+     <div className="p-1 border border-dark">
+     <div className="row row-cols-2">
+            <div className="col p-2">
         <div>
-            <h1>HTML5</h1>
-      <img src={HtmlPhoto} width="120" height="140" ></img>
+            <h3>HTML5</h3>
+      <img src={HtmlPhoto} width="80" height="100" ></img>
         </div>
     </div>
-    <div className="col">
+    <div className="col p-2">
         <div>
-        <h1>CSS3</h1>
-    <img src={CSSPhoto} width="130" height="150" ></img>
+        <h3>CSS3</h3>
+    <img src={CSSPhoto} width="80" height="100" ></img>
         </div>
     </div>
-    <div className="col">
+    <div className="col p-2">
     <div>
-        <h1>JAVASCRIPT</h1>
-    <img src={JSPhoto} width="130" height="150" ></img>
+        <h3>JAVASCRIPT</h3>
+    <img src={JSPhoto} width="80" height="100" ></img>
         </div>
     </div>
+  
+    <div className="col p-2">
+    <div>
+        <h3>REACT.JS</h3>
+    <img src={RPhoto} width="80" height="100" ></img>
+        </div>
+    </div>
+    <div className="col p-2">
+    <div>
+        <h3>REDUX</h3>
+    <img src={RDPhoto} width="80" height="100" ></img>
+        </div>
+    </div>
+    <div className="col p-2">
+    <div>
+        <h3>BOOTSTRAP</h3>
+    <img src={BPhoto} width="100" height="80" ></img>
+
+        </div>
   </div>
-  <div className="row text-center">
-    <div className="col">
-    <div>
-        <h1>REACT</h1>
-    <img src={RPhoto} width="130" height="150" ></img>
-        </div>
+  </div>
+         
+     </div>
     </div>
-    <div className="col">
-    <div>
-        <h1>REDUX</h1>
-    <img src={RDPhoto} width="110" height="130" ></img>
-        </div>
-    </div>
-    <div className="col">
-    <div>
-        <h1>BOOTSTRAP</h1>
-    <img src={BPhoto} width="130" height="100" ></img>
+    
+    <div className="col-6 col-md-4 d-flex justify-content-center mt-5">
+        <div className="">
+
+    <h1 className='text-center' style = {style} >Skills</h1>
         </div>
       
     </div>
   </div>
 </div>
+        
+</div>
     )
 }
+
