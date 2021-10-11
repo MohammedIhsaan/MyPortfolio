@@ -19,16 +19,40 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    
     <style>
+
+      .font-link{
+        font-family: 'Baloo Bhai 2', cursive;
+      }
+
+      .about{
+       padding-bottom: 40px;
+      }
          .container{
    padding: 1em 0; 
    /* float:inline-start ; */
    width: 50%; 
- }  
+ } 
+ 
+ .interst{
+   padding-top: 30px;
+ }
 
 .containerHover:hover{
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 330px){
+  .rounded-circle{
+    display: block;
+    width: 100%;
+
+  }
+
 @media screen and (max-width: 640px){
   .container{
     display: block;
@@ -39,9 +63,11 @@
     display: flex;
   } */
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
  
-  .mySkills{
+  .mySkills .interst{
+   padding-top: 30px;
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,7 +179,8 @@
 
 
   
-    </style>
+ </style>
+
     <title>Mohammed Ihsaan Portfolio</title>
   </head>
   <body>
@@ -161,4 +188,4 @@
     <div id="root"></div>
   
   </body>
-</html>
+  </html>

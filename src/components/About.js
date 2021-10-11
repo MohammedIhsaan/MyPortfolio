@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import photo from '../1.jpg'
+import backgroundImage from '../images/1.jpg'
 export default function About (){
 
     let Data = useSelector(state=>state.allproducts.data)
@@ -8,19 +9,23 @@ export default function About (){
     let list = Data[0].interst.map(list=> <li> {list} </li>)
             
 
-    return(      
-        <div className='row '>
-            <div className="col-sm-6 col-lg-4">
+    return(
+        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat',maxWidth:"100%",height:"100vh" ,backgroundSize:"cover"
+        }} className="container-fluid text-center bg"> 
+
+        <div className='row mt-6 about' >
+            <div className="col-sm-6 col-lg-4 p-5">
+                
                 <div className="container-md">
                 <div class="text-center">
                     <img class="rounded-circle z-depth-2 " src = {photo} alt='not availbe'/>
                  </div>
                 </div>
                 <div className="row">  
-                    <h5 className= "text-primary text-center">{Data[0].name}</h5>                                  
+                    <h5 className= "text-dark text-center ">{Data[0].name}</h5>                                  
                 </div>
                 <div className="row"> 
-                  <h7 className= "text-info text-center" > {Data[0].ocupation} </h7>
+                  <h7 className= "text-dark text-center" > {Data[0].ocupation} </h7>
                  </div>  
                  <div className='text-center'>
 
@@ -41,21 +46,25 @@ export default function About (){
                   
             </div>
             <div className="col-sm-6 col-lg-8 p-5">
-                <span className="p-5"> {Data[0].intro} </span>
-               <div className="row">
+
+            <div class="card font-link">
+                    <div class="card-body">
+                        {Data[0].intro}
+                
+               <div className="row interst">
+                   <div className='col'>
+                       <h4>Education</h4>
+                       
+                           M.E STRUCTURAL ENGINEER ( M.S Bidwe Engineering College, Latur)
+                           
+                       
+                   </div>
                    <div className='col'>
                        <h4>Interset</h4>
                        <ul>
                            {list}
                        </ul>
                        
-                   </div>
-                   <div className='col'>
-                       <h4>Education</h4>
-                       <ul>
-                           <li>1</li>
-                           <li>2</li>
-                       </ul>
                    </div>
 
                </div>
@@ -66,5 +75,8 @@ export default function About (){
 
         </div>
         
+                    </div>
+            </div>
+        </div>      
     )
 }

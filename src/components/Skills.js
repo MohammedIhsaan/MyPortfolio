@@ -4,7 +4,7 @@ import JSPhoto from "../js.png"
 import RPhoto from "../reactjs.png"
 import RDPhoto from "../redux.png"
 import BPhoto from "../bootstrap.png"
-import backgroundImage from '../images/1.jpg'
+import backgroundImage from '../images/2.jpg'
 
 let style = {fontSize:"70px",
               }
@@ -25,11 +25,11 @@ export default function Skills (){
     </div>
 
     <div className="col-md-8">
-     <div className="p-1 border border-dark ">
+     <div className="p-1 border border-dark mySkills">
          <div>
 
          
-     <div className="row row-cols-3 mySkills ">
+     <div className="row row-cols-3  ">
          <div>
             <div className="col p-2 skill">
         <div>

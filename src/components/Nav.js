@@ -6,13 +6,15 @@ import { Row } from "react-bootstrap"
 import { Col } from "react-bootstrap"
 export default function Navb(){
     return(
-      <div className="p-5">
 
-<Navbar bg="dark" variant ='dark' expand="lg" fixed="top">
-  <Container>
-  <Row>
-    <Col xs={12} md={8}><Navbar.Brand href="#home">Mohammed Ihsaanul Haque</Navbar.Brand></Col>
-    <Col xs={6} md={4}><Navbar.Collapse id="basic-navbar-nav">
+      
+<div className ="about">
+
+<Navbar className="" bg="dark" variant ='dark' expand="lg" fixed="top">
+  
+  
+    <Col ><Navbar.Brand href="#home">Mohammed Ihsaanul Haque</Navbar.Brand></Col>
+    <Col ><Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#link">About</Nav.Link>
@@ -27,13 +29,14 @@ export default function Navb(){
         </NavDropdown>
       </Nav>
     </Navbar.Collapse></Col>
-  </Row>
+  
     
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     
-  </Container>
+ 
 </Navbar>
 
-      </div>
+      
+        </div>
     )
 }
