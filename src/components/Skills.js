@@ -10,43 +10,36 @@ let style = {fontSize:"70px",
               }
 export default function Skills (){
     return(
-        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat',maxWidth:"100%",height:"100vh" ,backgroundSize:"cover"
+        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat' ,backgroundSize:"cover"
         }} className="container-fluid text-center bg">        
             
 
-            <div className="container-fluid ">
-  <div className="row g-5 ">
-  <div className="col-6 col-md-4 text-center">
-        <div className="skill-text">
-
-    <h1 className='' style = {style} >Skills</h1>
-        </div>
-      
+            <div className=" ">
+  <div className="row ">
+  <div className="col-md-4 skill-text col-6-center">
+    <h1 className='' style = {style} >Skills</h1>  
     </div>
 
-    <div className="col-md-8">
-     <div className="p-1 border border-dark mySkills">
-         <div>
-
-         
-     <div className="row row-cols-3  ">
-         <div>
-            <div className="col p-2 skill">
-        <div>
-            <h3>HTML5</h3>
-      <img src={HtmlPhoto} width="80" height="100" ></img>
+    <div className="col-md-8 ">
+     <div className="p-1 border border-dark skill-center">   
+     <div className="row row-cols-3 mySkills ">
+        
+        <div className="col p-2 skill">
+                <div>
+                            <h3>HTML5</h3>
+                       <img src={HtmlPhoto} width="80" height="100" ></img>
+                </div>
         </div>
-    </div>
     <div className="col p-2 skill">
         <div>
         <h3>CSS3</h3>
-    <img src={CSSPhoto} width="80" height="100" ></img>
+       <img src={CSSPhoto} width="80" height="100" ></img>
         </div>
     </div>
-         </div>
-         <div>
+         
+         
 
-    <div className="col p-2 skill">
+    <div className="col p-2 skill ">
     <div>
         <h3>JAVASCRIPT</h3>
     <img src={JSPhoto} width="80" height="100" ></img>
@@ -54,28 +47,27 @@ export default function Skills (){
     </div>
   
     <div className="col p-2 skill">
-    <div>
+           <div>
         <h3>REACT.JS</h3>
-    <img src={RPhoto} width="80" height="100" ></img>
+           <img src={RPhoto} width="80" height="100" ></img>
         </div>
     </div>
-         </div>
+         
+         
+
+    <div className="col p-2 skill">
          <div>
-
-    <div className="col p-2 skill">
-    <div>
         <h3>REDUX</h3>
-    <img src={RDPhoto} width="80" height="100" ></img>
+        <img src={RDPhoto} width="80" height="100" ></img>
         </div>
     </div>
     <div className="col p-2 skill">
-    <div>
+          <div>
         <h3>BOOTSTRAP</h3>
-    <img src={BPhoto} width="100" height="80" ></img>
-
+         <img src={BPhoto} width="100" height="80" ></img>
         </div>
-         </div>
-  </div>
+         
+  
   </div>
   </div>
          

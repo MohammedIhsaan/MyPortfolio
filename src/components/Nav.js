@@ -13,8 +13,8 @@ export default function Navb(){
 <Navbar className="" bg="dark" variant ='dark' expand="lg" fixed="top">
   
   
-    <Col ><Navbar.Brand href="#home">Mohammed Ihsaanul Haque</Navbar.Brand></Col>
-    <Col ><Navbar.Collapse id="basic-navbar-nav">
+    <Navbar.Brand className="nav-center" href="#home">Mohammed Ihsaanul Haque</Navbar.Brand>
+    <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#link">About</Nav.Link>
@@ -28,7 +28,7 @@ export default function Navb(){
           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
         </NavDropdown>
       </Nav>
-    </Navbar.Collapse></Col>
+    </Navbar.Collapse>
   
     
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

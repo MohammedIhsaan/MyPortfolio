@@ -10,7 +10,7 @@ export default function About (){
             
 
     return(
-        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat',maxWidth:"100%",height:"100vh" ,backgroundSize:"cover"
+        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat',backgroundSize:"cover"
         }} className="container-fluid text-center bg"> 
 
         <div className='row mt-6 about' >

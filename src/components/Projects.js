@@ -13,9 +13,9 @@ export default function Projects (){
   })
   
     return(
-        <div>
-              <h1 className='text-center'>Projects</h1>       
-              <div className="row row-cols-auto" style={{backgroundColor:"GrayText"}}>
+        <div style={{backgroundColor:"GrayText", height:"120vh"}}>
+              <h1 className='text-center p-3'>Projects</h1>       
+              <div className="row row-cols-auto skill" >
               {project}            
              </div>
         </div>
