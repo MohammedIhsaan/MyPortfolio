@@ -1,40 +1,24 @@
+import { useSelector } from 'react-redux'
+import ProjectComponent from './ProjectComp'
+import imageArray from './imagesData'
+
+
 export default function Projects (){
+  let Data = useSelector(state=>state.allproducts.data)
+  let data =Data[0].project 
+  console.log(Data[0])
+
+  let project = data.map((item,i)=>{
+    return <ProjectComponent data ={item} image={imageArray[i]}/>
+  })
+  
     return(
-        <div style={{backgroundColor:"GrayText"}}>
-            <div className="container">
-  <div className="row">
-    <div className="col">
-    <div className="card" style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card text-center">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div className="col">
-    <div className="card" style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card text-center">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div className="col">
-    <div className="card" style={{width: "18rem;"}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card text-center">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-</div>
+        <div>
+              <h1 className='text-center'>Projects</h1>       
+              <div className="row row-cols-auto" style={{backgroundColor:"GrayText"}}>
+              {project}            
+             </div>
+        </div>
+
     )
 }
