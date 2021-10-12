@@ -10,11 +10,11 @@ export default function About (){
             
 
     return(
-        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat',backgroundSize:"cover"
+        <div id="intro" style={{backgroundImage:`url(${backgroundImage})`,  backgroundPosition: "center center", backgroundAttachment: "fixed " ,backgroundRepeat: 'no-repeat',backgroundSize:"cover"
         }} className="container-fluid text-center bg"> 
 
         <div className='row mt-6 about' >
-            <div className="col-sm-6 col-lg-4 p-5">
+            <div className="col-sm-6 col-lg-4 pt-5">
                 
                 <div className="container-md">
                 <div class="text-center">
@@ -22,10 +22,10 @@ export default function About (){
                  </div>
                 </div>
                 <div className="row">  
-                    <h5 className= "text-dark text-center ">{Data[0].name}</h5>                                  
+                    <h5 className= "text-dark text-center pt-4 ">{Data[0].name}</h5>                                  
                 </div>
                 <div className="row"> 
-                  <h7 className= "text-dark text-center" > {Data[0].ocupation} </h7>
+                  <h6 className= "text-dark text-center" > {Data[0].ocupation} </h6>
                  </div>  
                  <div className='text-center'>
 

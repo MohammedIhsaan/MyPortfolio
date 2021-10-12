@@ -1,26 +1,26 @@
 import HtmlPhoto from "../html.png"
 import CSSPhoto from "../css3.png"
-import JSPhoto from "../js.png"
+import JSPhoto from "../images/JavaScript-logo.png"
 import RPhoto from "../reactjs.png"
 import RDPhoto from "../redux.png"
 import BPhoto from "../bootstrap.png"
-import backgroundImage from '../images/2.jpg'
+import backgroundImage from '../images/2m.jpg'
 
 let style = {fontSize:"70px",
               }
 export default function Skills (){
     return(
-        <div style={{backgroundImage:`url(${backgroundImage})`,backgroundRepeat: 'no-repeat' ,backgroundSize:"cover"
-        }} className="container-fluid text-center bg">        
+        <div id="newSkill" style={{backgroundImage:`url(${backgroundImage})`, backgroundPosition: "center center", backgroundAttachment: "fixed ",backgroundRepeat: 'no-repeat' ,backgroundSize:"cover"
+        }} className="container-fluid text-center bg changeImage">        
             
 
             <div className=" ">
   <div className="row ">
-  <div className="col-md-4 skill-text col-6-center">
+  <div className="col-md-4 skill-text col-6-center pt-4">
     <h1 className='' style = {style} >Skills</h1>  
     </div>
 
-    <div className="col-md-8 ">
+    <div className="col-md-8 p-5">
      <div className="p-1 border border-dark skill-center">   
      <div className="row row-cols-3 mySkills ">
         
@@ -42,7 +42,7 @@ export default function Skills (){
     <div className="col p-2 skill ">
     <div>
         <h3>JAVASCRIPT</h3>
-    <img src={JSPhoto} width="80" height="100" ></img>
+    <img src={JSPhoto} width="100" height="100" ></img>
         </div>
     </div>
   

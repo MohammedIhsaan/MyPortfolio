@@ -1,9 +1,8 @@
 import { Navbar } from "react-bootstrap"
-import { Container } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import { NavDropdown } from "react-bootstrap"
-import { Row } from "react-bootstrap"
-import { Col } from "react-bootstrap"
+import { Link } from "react-scroll"
+
 export default function Navb(){
     return(
 
@@ -13,19 +12,18 @@ export default function Navb(){
 <Navbar className="" bg="dark" variant ='dark' expand="lg" fixed="top">
   
   
-    <Navbar.Brand className="nav-center" href="#home">Mohammed Ihsaanul Haque</Navbar.Brand>
+    <Navbar.Brand className="nav-center" href="/">
+     <div className="myName"> Mohammed Ihsaanul Haque</div> </Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">About</Nav.Link>
-        <Nav.Link href="#link">Skills</Nav.Link>
-        <Nav.Link href="#link">Pojects</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <Nav.Link href="/">Home</Nav.Link>
+        <Link to='intro'><Nav.Link  >About</Nav.Link> </Link>
+        <Link to='newSkill'><Nav.Link >Skills</Nav.Link> </Link>
+        <Link to='project'><Nav.Link >My Work</Nav.Link> </Link>                
+        <NavDropdown title="CONNECT" id="basic-nav-dropdown">
+          <NavDropdown.Item href="https://www.linkedin.com/in/ihsaan-mohammed-895732222/"><h6 className="text-center"><i class="fab fa-linkedin"></i> LINKDIN </h6></NavDropdown.Item>
+          <NavDropdown.Item href="https://github.com/MohammedIhsaan"><h6 className="text-center"> <i class="fab fa-github-square"></i> GIT HUB </h6></NavDropdown.Item>
+          <NavDropdown.Item href="https://twitter.com/ihsaanul_haque"><h6 className="text-center"><i class="fab fa-twitter-square"></i> TWITTER </h6></NavDropdown.Item>
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
