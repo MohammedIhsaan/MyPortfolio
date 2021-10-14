@@ -2,7 +2,7 @@ import {ActionTypes} from '../constants/action-type.js'
 
 const initailState = {
   data :[{name:"Mohammed Ihsaanul Haq ", 
-          intro:" Hi, I am Mohammed Ihsaanul Haque. I am a Web Developer. it's been 1 year i am learning HTML, CSS, JAVASCRIPT, REACT.JS ,REACT.JS with Hooks  Hi, I am Mohammed Ihsaanul Haque. I am a Web Developer. it's been 1 year i am learning HTML, CSS, JAVASCRIPT, REACT.JS ,REACT.JS with Hooks etc etc ",
+          intro:" Hi, I am Mohammed Ihsaan. Motivated  web developer ,Passionate about building first-class web applications. I have completed some React.js projects. Feel free to check my My Work which will walk you through my project. My expertise are in  React.js ,JavaScript, HTML5, CSS3, Bootstrap, Material UI, and apart from that I am also working as freelancer. I'm also learning Back-End Development and looking forward to be a Full Stack Web Developer.",
           ocupation : "RACT.JS DEVELOPER" ,
           interst : ["Web Devlepment","AI","BlockChain"], 
           education : ["M.E STRUCTURAL ENGINEER"],

@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import photo from '../1.jpg'
+import photo from '../images/MohammedIhsaan.jpeg'
 import backgroundImage from '../images/1.jpg'
 export default function About (){
 
@@ -18,7 +18,7 @@ export default function About (){
                 
                 <div className="container-md">
                 <div class="text-center">
-                    <img class="rounded-circle z-depth-2 " src = {photo} alt='not availbe'/>
+                    <img class="rounded-circle z-depth-2 " style={{width:"240px"}} src = {photo} alt='not availbe'/>
                  </div>
                 </div>
                 <div className="row">  
