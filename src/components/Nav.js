@@ -12,11 +12,11 @@ export default function Navb(){
 <Navbar className="" bg="dark" variant ='dark' expand="lg" fixed="top">
   
   
-    <Navbar.Brand className="nav-center" href="/">
+     <Navbar.Brand className="nav-center">
      <div className="myName"> Mohammed Ihsaanul Haque</div> </Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="/">Home</Nav.Link>
+      <Link to='intro'> <Nav.Link>Home</Nav.Link></Link>
         <Link to='intro'><Nav.Link  >About</Nav.Link> </Link>
         <Link to='newSkill'><Nav.Link >Skills</Nav.Link> </Link>
         <Link to='project'><Nav.Link >My Work</Nav.Link> </Link>                

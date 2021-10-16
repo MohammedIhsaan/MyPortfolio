@@ -22,7 +22,7 @@ export default function Skills (){
 
     <div className="col-md-8 p-5">
      <div className="p-1 border border-dark skill-center">   
-     <div className="row row-cols-3 mySkills ">
+     <div className="row row-cols-2 mySkills ">
         
         <div className="col p-2 skill">
                 <div>

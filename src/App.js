@@ -17,7 +17,7 @@ export default function App (){
             <Skills/>
             <Certificate/>
             <Projects/>
-            <Contact/>   
+             
                 
         </div>
     )
