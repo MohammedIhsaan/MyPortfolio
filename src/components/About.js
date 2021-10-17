@@ -40,14 +40,15 @@ export default function About (){
 
             <div class="card font-link">
                     <div class="card-body">
-                        <h5>
+                        <h5 style={{lineHeight: 1.6}}>
 
-                    Hi, I am Mohammed Ihsaan. Motivated  web developer ,
-                    Passionate about building first-class web applications.
-                     I have completed some React.js projects. 
-                     Feel free to check my My Work which will walk you through my project.
-                      My expertise are in  React.js ,JavaScript, HTML5, CSS3, Bootstrap, 
-                      Material UI, and apart from that I am also working as freelancer. 
+                    Hi, I am Mohammed Ihsaan. < br ></br> Motivated  web developer ,
+                    Passionate about building first-class web applications. I have compelted my Post Graduation in Structural Engineering(CIVIL).
+                    I have developed a keen interest for Web Development. 
+                     I have completed some React.js projects, 
+                     You can  check in My Work section.
+                      My expertise are in  React.js, Redux ,JavaScript, HTML5, CSS3, Bootstrap, 
+                      Material UI, and also working as freelancer web developer. 
                       I'm also learning Back-End Development 
                     and looking forward to be a Full Stack Web Developer.
                         </h5>
