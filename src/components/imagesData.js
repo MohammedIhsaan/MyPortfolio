@@ -4,8 +4,16 @@ import JSPhoto from "../images/JavaScript-logo.png"
 import RPhoto from "../reactjs.png"
 import RDPhoto from "../redux.png"
 import BPhoto from "../bootstrap.png"
+import ephoto from '../images/e.png'
 
     let projectData = [
+        {
+            projectName: "E Comerece Website",
+            projectImage : ephoto,
+            projectLink : "https://mohammedihsaan.github.io/E-Commerce-Website/",
+            projectDescription : " Working on this Project  ",
+            icon :[JSPhoto,RDPhoto,RPhoto]
+        },
         {
             projectName: "Online Shopping",
             projectImage : shoppingImage,
