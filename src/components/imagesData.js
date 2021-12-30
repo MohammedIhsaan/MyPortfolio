@@ -1,9 +1,9 @@
 import shoppingImage from '../images/online-shopping.jpg'
 import birthdayImage from '../images/birthday.png'
 import JSPhoto from "../images/JavaScript-logo.png"
-import RPhoto from "../reactjs.png"
-import RDPhoto from "../redux.png"
-import BPhoto from "../bootstrap.png"
+import RPhoto from "../images/reactjs.png"
+import RDPhoto from "../images/redux.png"
+import BPhoto from "../images/bootstrap.png"
 import ephoto from '../images/e.png'
 
     let projectData = [
