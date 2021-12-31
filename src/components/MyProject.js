@@ -13,14 +13,16 @@ const Title = styled.h1`
 padding-top: 50px;
 font-size: 60px;
 `
-const ProjectContainer = styled.div``
+const ProjectContainer = styled.div`
+padding: 20px;
+`
 export default function MyProject() {
 
     let project = imageArray.map((obj,i)=>{
         return <MyProjectComponent  data={obj}/>
       })
     return (
-        <Container>
+        <Container id='project'>
             <Title>My Project</Title>
             <ProjectContainer>{project}</ProjectContainer>
         </Container>

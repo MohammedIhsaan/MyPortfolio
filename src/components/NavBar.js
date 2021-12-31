@@ -1,27 +1,30 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
 import { Link } from "react-scroll"
-
 import { toggleIcon } from '../reponsive'
+import {Menu } from '@material-ui/icons';
+
+
 
 
 const Container = styled.div`
-background-color: black;
+background-color: #24292f;
 color: white;
 font-size: 18px;
 display: flex;
  justify-content: space-between;
  flex-wrap: wrap;
 padding: 10px 10px;
-/* position: fixed;
-width: 100%; */
+position: fixed;
+width: 100%;
+z-index: 4;
 `
 
 const Logo = styled.div`
 font-weight: 500;
 `
 
-const Menu = styled.div`
+const Menus = styled.div`
 display: flex;
 justify-content: space-between;
 position: relative;
@@ -31,7 +34,7 @@ position: relative;
     overflow: hidden;
     width: 100%;
     max-height: ${({isOpen})=>isOpen? "300px": "0"};
-    transition: max-height 0.3s ease-in;
+    transition: max-height 0.5s ease-in-out;
 }
 
 `
@@ -43,13 +46,15 @@ margin-left: 25px;
 
 
 &:hover{
-    color: red;
+    opacity: 0.8;
     transform: scale(1.1);
 }
 `
-const Toggle = styled.button`
+const Toggle = styled.span`
 display: none;
 ${toggleIcon({display:'flex'})}
+color: white;
+background: #24292f;
 `
 export default function NavBar() {
 
@@ -59,14 +64,14 @@ export default function NavBar() {
         <Container>
                 <Logo>MOHAMMED IHSAANUL HAQUE</Logo>
                 <Toggle onClick={()=>setIsOpen(!isOpen)}>
-                    icon
+                <Menu ></Menu>
                 </Toggle>         
-                <Menu isOpen={isOpen}>
-                  <MenuItem><Link to='intro'>HOME</Link>  </MenuItem>
-                  <MenuItem><Link to='intro'>ABOUT</Link> </MenuItem>
-                  <MenuItem><Link to='newSkill'>SKILLS</Link> </MenuItem>
-                  <MenuItem><Link to='project'>MY WORK</Link> </MenuItem>
-                </Menu>         
+                <Menus isOpen={isOpen}>
+                  <MenuItem ><Link to='intro' onClick={()=>setIsOpen(!isOpen)}>HOME</Link>  </MenuItem>
+                  <MenuItem ><Link to='intro' onClick={()=>setIsOpen(!isOpen)}>ABOUT</Link> </MenuItem>
+                  <MenuItem ><Link to='newSkill' onClick={()=>setIsOpen(!isOpen)}>SKILLS</Link> </MenuItem>
+                  <MenuItem ><Link to='project' onClick={()=>setIsOpen(!isOpen)}>MY PROJECT</Link> </MenuItem>
+                </Menus>         
                 
         </Container>
     )

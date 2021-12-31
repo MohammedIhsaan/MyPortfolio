@@ -6,20 +6,23 @@ import JSPhoto from "../images/JavaScript-logo.png"
 import RPhoto from "../images/reactjs.png"
 import RDPhoto from "../images/redux.png"
 import BPhoto from "../images/bootstrap.png"
-import backgroundImage from '../images/2m.jpg'
+import backgroundImage from '../images/4.jpg'
 
 const Container = styled.div`
 background-image: url(${backgroundImage});
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 0 0;
-background-attachment: fixed;
+/* background-attachment: fixed; */
 display: flex;
 justify-content: space-around;
 padding: 50px;
 
 @media only screen and (max-width:790px){
     flex-direction: column;
+}
+@media only screen and (max-width:690px){
+    padding: 30px;
 }
 `
 const LeftContainer = styled.div`
@@ -44,6 +47,7 @@ justify-content: center;
 const SubContainer1 = styled.div`
 display: flex;
 align-items: center;
+color: blueviolet;
 
 flex-direction: column;
 padding-left: 100px;
@@ -60,7 +64,7 @@ align-items: center;
 `
 export default function MySkill() {
     return (
-        <Container>
+        <Container id='newSkill'>
             <LeftContainer><Title>Skills</Title></LeftContainer>
             <RightContainer>
                 <SubContainer1>

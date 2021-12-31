@@ -21,11 +21,14 @@ background-attachment: fixed;
 ` 
 const LeftContainer = styled.div`
 flex: 1;
-padding-top: 50px;
+padding-top: 100px;
+padding-bottom:50px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding-left:20px;
+padding-Right:20px;
 ` 
 
 const MyImage = styled.img`
@@ -42,7 +45,7 @@ border-radius: 50%;
     width: 250px;
 }
 @media only screen and (max-width:690px){
-    width: 45%;
+    width: 65%;
 }
 
 `
@@ -60,30 +63,43 @@ const Icon = styled.a`
 padding-left: 10px;
 cursor: pointer;
 color: #000;
+
 `
 
 const RightContainer = styled.div`
 padding: 50px;
+padding-top: 100px;
 flex: 2;
 display: flex;
 flex-direction: column;
-
+@media only screen and (max-width:690px){
+    padding: 18px;
+}
 `
 const SubConatiner = styled.div`
 background-color: white;
-border-radius: 5%;
+border-radius: 20px;
 padding: 50px;
+@media only screen and (max-width:690px){
+    padding: 15px;
+}
 `
 
 const MyIntro = styled.h6`
 font-weight: 400;
 line-height: 25px;
 font-size: 18px;
+
 `
 const MyDetails = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
+justify-content: center;
+padding-top: 10px;
+@media only screen and (max-width:690px){
+    flex-direction: column;
+}
 
 `
 const Education = styled.div`
@@ -100,12 +116,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+padding-top: 20px;
 
 `
 
 export default function AboutMe() {
     return (
-        <Container>
+        <Container id='intro'>
             <LeftContainer>
                 <MyImage src={Myphoto} />
                 <MyName>MOHAMMED IHSAANUL HAQUE</MyName>
@@ -124,7 +141,7 @@ export default function AboutMe() {
                 <SubConatiner>
 
                 <MyIntro>
-                Hi, I am Mohammed Ihsaan. < br ></br> Motivated  web developer ,
+                Hi, I am Mohammed Ihsaan. Motivated  web developer ,
                     Passionate about building first-class web applications. I have compelted my Post Graduation in Structural Engineering(CIVIL).
                     I have developed a keen interest for Web Development. 
                      I have completed some React.js projects, 
