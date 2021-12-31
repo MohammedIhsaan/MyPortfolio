@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.js": "/MyPortfolio/static/js/main.705fd415.chunk.js",
-    "main.js.map": "/MyPortfolio/static/js/main.705fd415.chunk.js.map",
+    "main.js": "/MyPortfolio/static/js/main.9f36bf3f.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.9f36bf3f.chunk.js.map",
     "runtime-main.js": "/MyPortfolio/static/js/runtime-main.d1cc5ab9.js",
     "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.d1cc5ab9.js.map",
-    "static/css/2.c1256375.chunk.css": "/MyPortfolio/static/css/2.c1256375.chunk.css",
-    "static/js/2.cdcf982b.chunk.js": "/MyPortfolio/static/js/2.cdcf982b.chunk.js",
-    "static/js/2.cdcf982b.chunk.js.map": "/MyPortfolio/static/js/2.cdcf982b.chunk.js.map",
+    "static/js/2.8b87624a.chunk.js": "/MyPortfolio/static/js/2.8b87624a.chunk.js",
+    "static/js/2.8b87624a.chunk.js.map": "/MyPortfolio/static/js/2.8b87624a.chunk.js.map",
     "index.html": "/MyPortfolio/index.html",
-    "static/css/2.c1256375.chunk.css.map": "/MyPortfolio/static/css/2.c1256375.chunk.css.map",
-    "static/js/2.cdcf982b.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.cdcf982b.chunk.js.LICENSE.txt",
+    "static/js/2.8b87624a.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.8b87624a.chunk.js.LICENSE.txt",
     "static/media/1.b8f420a6.jpg": "/MyPortfolio/static/media/1.b8f420a6.jpg",
-    "static/media/2m.fcad3060.jpg": "/MyPortfolio/static/media/2m.fcad3060.jpg",
-    "static/media/3m.ba98cb76.jpg": "/MyPortfolio/static/media/3m.ba98cb76.jpg",
+    "static/media/4.ade3a4e3.jpg": "/MyPortfolio/static/media/4.ade3a4e3.jpg",
     "static/media/JavaScript-logo.28c61040.png": "/MyPortfolio/static/media/JavaScript-logo.28c61040.png",
     "static/media/MohammedIhsaan.f1e971db.jpeg": "/MyPortfolio/static/media/MohammedIhsaan.f1e971db.jpeg",
     "static/media/birthday.513e756d.png": "/MyPortfolio/static/media/birthday.513e756d.png",
@@ -20,14 +17,13 @@
     "static/media/css3.9914c56c.png": "/MyPortfolio/static/media/css3.9914c56c.png",
     "static/media/e.0b9ffdc6.png": "/MyPortfolio/static/media/e.0b9ffdc6.png",
     "static/media/html.b82dbe11.png": "/MyPortfolio/static/media/html.b82dbe11.png",
-    "static/media/online-shopping.dae495de.jpg": "/MyPortfolio/static/media/online-shopping.dae495de.jpg",
+    "static/media/online-shopping.0f6d3e93.jpg": "/MyPortfolio/static/media/online-shopping.0f6d3e93.jpg",
     "static/media/reactjs.f3e576ba.png": "/MyPortfolio/static/media/reactjs.f3e576ba.png",
     "static/media/redux.b3b939c6.png": "/MyPortfolio/static/media/redux.b3b939c6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d1cc5ab9.js",
-    "static/css/2.c1256375.chunk.css",
-    "static/js/2.cdcf982b.chunk.js",
-    "static/js/main.705fd415.chunk.js"
+    "static/js/2.8b87624a.chunk.js",
+    "static/js/main.9f36bf3f.chunk.js"
   ]
 }
